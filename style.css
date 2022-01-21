@@ -3,11 +3,13 @@ body {
     padding: 0;
     background: url(assets/bg.jpg) no-repeat;
     background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 .box {
-    width: 1000px;
-    height: 75%;
+    width: 75%;
+    height: auto;
     background: rgba(0, 0, 0, 0.4);
     padding: 40px;
     text-align: center;
