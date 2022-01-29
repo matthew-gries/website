@@ -2,7 +2,8 @@
  * Script to set the text of an element to a random quote.
  */
 
-const QUOTE_LIST_URL = "https://raw.githubusercontent.com/akhiltak/inspirational-quotes/master/Quotes.csv";
+// BAD BAD BAD BAD BAD BAD BAD BAD BAD THIS NEEDS TO CHANGE BAD BAD BAD
+// const QUOTE_LIST_URL = "https://raw.githubusercontent.com/akhiltak/inspirational-quotes/master/Quotes.csv";
 const QUOTE_ELEMENT_CLASS_NAME = "random-quote";
 
 /**
@@ -33,10 +34,12 @@ async function getQuoteList() {
         });
 }
 
-getQuoteList()
-    .then((quotes) => {
-        const quote = quotes[getRandomIntInclusive(0, quotes.length-1)];
-        const quoteElement = document.getElementsByClassName(QUOTE_ELEMENT_CLASS_NAME)[0];
-        quoteElement.textContent = quote;
-    })
-    .catch(e => console.log(e));
+// getQuoteList()
+//     .then((quotes) => {
+//         const quote = quotes[getRandomIntInclusive(0, quotes.length-1)];
+//         const quoteElement = document.getElementsByClassName(QUOTE_ELEMENT_CLASS_NAME)[0];
+//         quoteElement.textContent = quote;
+//     })
+//     .catch(e => console.log(e));
+const quoteElement = document.getElementsByClassName(QUOTE_ELEMENT_CLASS_NAME)[0];
+quoteElement.textContent = "Coming soon!";
