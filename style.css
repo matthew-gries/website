@@ -29,6 +29,7 @@ body {
 }
 
 .main-page-header-content-box {
+  border-radius: 5%;
   width: 80%;
   height: 80%;
   background: rgba(0, 0, 0, 0.4);
@@ -63,8 +64,9 @@ body {
   }
 }
 
-.main-page-header-content-box h1 {
+.main-page-header-content-box h1, h2 {
   align-content: center;
+  text-align: center;
 }
 
 .main-page-header-content-box ul, li {
@@ -119,6 +121,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-content: center;
+  text-align: center;
 }
 
 .main-page-content-intro {
@@ -127,26 +130,26 @@ body {
   letter-spacing: .15em; /* Adjust as needed */
 }
 
-/** Typewritter animation from https://css-tricks.com/snippets/css/typewriter-effect/ **/
+/** Typewritter animation from https://codepen.io/denic/pen/GRoOxbM **/
 .typewritter-effect {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--main-page-content-text-secondary-color); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  width: 8ch;
+  animation: typing 3.5s steps(8), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 1.6em;
 }
 
-/* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 45% }
+  from {
+    width: 0
+  }
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--main-page-content-text-secondary-color); }
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 /** Footer **/
