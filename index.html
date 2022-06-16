@@ -2,44 +2,52 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;"
-    />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/54752699fe.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-    ></script>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="js/selectRandomQuote.js"></script>
-    <title>Matt's Domain</title>
+      referrerpolicy="no-referrer" />
+    <title>Matt's Site</title>
   </head>
-
   <body>
-    <div class="box">
-      <img src="assets/profile.jpg" alt="" class="box-img" />
-      <h1>Matt's Domain</h1>
-      <h3>Robot Fan 🤖 Guitar Enthusiast 🎸</h3>
-      <h5>A random quote, just for you:</h5>
-      <h5 class="random-quote"></h5>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/matthewgriescs/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/matthew-gries/">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+
+    <!-- Header -->
+    <header class="main-page-header">
+      <div class="main-page-header-content-box">
+        <h1 class="main-page-header-content-box-item">Matt's Site</h1>
+        <img class="main-page-header-content-box-item" src="assets/profile.jpg" alt="">
+        <h2 class="main-page-header-content-box-item">Welcome!</h2>
+        <nav class="main-page-header-content-box-item">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="main-page-content">
+      <p class="main-page-content-intro typewritter-effect">
+        Hi! I'm Matt, a software developer based in Boston, MA.
+      </p>
+      <p class="main-page-content-intro">
+        Robot Fan 🤖 Guitar Enthusiast 🎸. Check out my site for my details!
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
