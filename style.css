@@ -16,6 +16,8 @@
 body {
   font-family: 'Fira Code', monospace;
   line-height: 1.6;
+  width: 100vw;
+  height: 100vh;
   overflow: scroll;
 }
 
@@ -69,6 +71,7 @@ body {
 .main-page-header-content-box ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .main-page-header-content-box a {
