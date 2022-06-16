@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-body {
+.main-page-body {
   font-family: 'Fira Code', monospace;
   line-height: 1.6;
   overflow: scroll;
@@ -157,6 +157,7 @@ body {
 .footer-container {
   background-color: var(--main-page-content-bg-secondary-color);
   color: var(--main-page-content-text-secondary-color);
+  margin-top: auto;
 }
 
 .footer-socials {
