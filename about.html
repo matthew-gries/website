@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />   
+    <link rel="stylesheet" type="text/css" href="css/common.css" />   
+    <link rel="stylesheet" type="text/css" href="css/about.css" />  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,22 +13,45 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Matt's Site</title>
   </head>
-  <body>
+  <body class="about-body">
 
     <!-- Header -->
-    <header class="general-header">
-      <div class="general-header-item">
-        <h1>Matt's Site</h1>
+    <header class="general-header bottom-border">
+      <div class="general-header-item general-header-logo">
+        <h1><a href="index.html">Matt's Site</a></h1>
       </div>
-      <nav class="general-header-item">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <nav class="general-header-item general-header-navbar">
+        <a class="general-header-navbar-item" href="index.html">Home</a>
+        <a class="general-header-navbar-item" href="about.html">About</a>
+        <a class="general-header-navbar-item" href="projects.html">Projects</a>
+        <a class="general-header-navbar-item" href="blog.html">Blog</a>
+        <a class="general-header-navbar-item" href="contact.html">Contact</a>
       </nav>
     </header>
+
+    <!-- Content -->
+    <section class="about-content">
+      <div class="about-content-box transparent-box">
+        <img class="about-content-box-item" src="assets/pic-about1.jpg" alt="">
+        <div class="about-content-box-item about-content-text-one">
+          <h2>About Me</h2>
+          <p>
+            Hi! My name is Matthew Gries and I am a software engineer based in Boston, MA. I graduated
+            from Northeastern University with a B.S. in Computer Science, with a concentration in Artificial
+            Intelligence. I am deeply passionate about robotics and artificial intelligence, but I like to dabble
+            in many different subfields. In fact, my desire to learn some HTML & CSS led me to create this site!
+          </p>
+        </div>
+        <div class="about-content-box-item about-content-text-two">
+          <p>
+            Outside of computer science, I try to keep myself busy with various different hobbies. My biggest hobby
+            is music, with my primary instrument being the guitar. I have also been recently inspired to pick up
+            learning French again.
+          </p>
+        </div>
+        <img class="about-content-box-item" src="assets/pic-about2.jpg" alt="">
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
