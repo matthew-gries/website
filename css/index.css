@@ -19,16 +19,6 @@
   height: 80%;
 }
 
-@keyframes blurintofocus {
-  from {
-      filter: blur(1.5rem);
-  }
-
-  to {
-      filter: blur();
-  }
-}
-
 .main-page-header-content-box h1, h2 {
   align-content: center;
   text-align: center;

@@ -19,6 +19,7 @@
   width: 90%;
   height: 90%;
   border-radius: 5%;
+  overflow: auto;
 }
 
 .about-content-box img {
@@ -44,5 +45,5 @@
 
 .about-content-text-one *, .about-content-text-two * {
   text-align: left;
-  padding: 0 30px;
+  padding: 15px 30px;
 }

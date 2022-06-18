@@ -1,0 +1,59 @@
+.about-body {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  overflow: scroll;
+}
+
+.contact-content {
+  background: url(../assets/bg-contact.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-content-box {
+  width: 90%;
+  height: 90%;
+  border-radius: 5%;
+}
+
+.contact-content-text {
+  padding: 15px;
+}
+
+.contact-content-email-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  padding: 30px;
+  width: 65%;
+}
+
+.contact-content-email-form input[type='text'],
+.contact-content-email-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.contact-content-email-form input:focus {
+  outline: none;
+}
+
+.contact-send-button {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.contact-send-button:hover {
+  transform: scale(0.98);
+}

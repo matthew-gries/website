@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />   
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="js/contact.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Matt's Site</title>
+  </head>
+  <body class="about-body">
+
+    <!-- Header -->
+    <header class="general-header bottom-border">
+      <div class="general-header-item general-header-logo">
+        <h1><a href="index.html">Matt's Site</a></h1>
+      </div>
+      <nav class="general-header-item general-header-navbar">
+        <a class="general-header-navbar-item" href="index.html">Home</a>
+        <a class="general-header-navbar-item" href="about.html">About</a>
+        <a class="general-header-navbar-item" href="projects.html">Projects</a>
+        <a class="general-header-navbar-item" href="blog.html">Blog</a>
+        <a class="general-header-navbar-item" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="contact-content">
+      <div class="contact-content-box transparent-box">
+        <div class="contact-content-text">
+          <h2>Contact Me!</h2>
+          <p>
+            You can contact me at <em>matthew.gries@outlook.com</em>!. You can use the
+            form below to fill out an email (hitting send will open your email client,
+            working on getting an SMTP server soon!)
+          </p>
+        </div>
+        <div class="contact-content-email-form">
+          <h3>Send an Email</h3>
+          <form>
+            <div class="contact-content-form-control">
+              <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="contact-content-form-control">
+              <input type="text" name="company" placeholder="Company Name" required>
+            </div>
+            <div class="contact-content-form-control">
+              <input type="text" name="subject" placeholder="Subject Line" required>
+            </div>
+            <div class="contact-content-form-control contact-content-message-box">
+              <input type="text" name="message" placeholder="Message" required>
+            </div>
+            <input type="submit" value="Send" class="contact-send-button" onclick="openEmailWindow()">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/matthew-gries"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/matthewgriescs/"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
