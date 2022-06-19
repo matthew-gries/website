@@ -1,0 +1,12 @@
+.blog-body {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  overflow: scroll;
+}
+  
+.blog-content {
+  background: url(../assets/bg-blog.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
