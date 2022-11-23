@@ -6,11 +6,12 @@
 -->
 <html>
   <head>
-    <title>Astral by HTML5 UP</title>
+    <title>Matt's Site</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body class="is-preload">
 
@@ -20,7 +21,8 @@
         <!-- Nav -->
           <nav id="nav">
             <a href="#" class="icon solid fa-home"><span>Home</span></a>
-            <a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+            <a href="#about" class="icon solid fa-address-card"><span>About</span></a>
+            <a href="#work" class="icon solid fa-folder"><span>Projects</span></a>
             <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
           </nav>
 
@@ -41,53 +43,55 @@
                 </a>
               </article>
 
+            <!-- About -->
+              <article id="about" class="panel">
+                <header>
+                  <h2>About</h2>
+                </header>
+                <section>
+                  <div class="row">
+                    <div class="col" style="align-items: center; justify-content: center; padding-bottom: 1em;">
+                      <a href="#" class="image fit"><img src="images/pic-about1.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div clas="row">
+                    <div class="col">
+                      <p>
+                        Hi! My name is Matthew Gries and I am a software engineer based in Boston, MA. I graduated
+                        from Northeastern University with a B.S. in Computer Science, with a concentration in Artificial
+                        Intelligence. I am deeply passionate about robotics and artificial intelligence, but I like to dabble
+                        in many different subfields. In fact, my desire to learn some HTML & CSS led me to create this site!
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        Outside of computer science, I try to keep myself busy with various different hobbies. My biggest hobby
+                        is music, with my primary instrument being the guitar. I have also been recently inspired to pick up
+                        learning French again.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </article>
+
             <!-- Work -->
               <article id="work" class="panel">
                 <header>
-                  <h2>Work</h2>
+                  <h2>Projects and Hobbies</h2>
                 </header>
                 <p>
-                  Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                  luctus elit eget interdum.
+                  Here is a collection of personal projects and hobbies that I have worked on!
                 </p>
                 <section>
                   <div class="row">
                     <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+                      <a href="https://sites.google.com/husky.neu.edu/simreinforcementlearning/home" class="image fit"><img src="images/project1.jpg" alt=""></a>
                     </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                      <a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+                    <div class="col-6">
+                      <p>Self-play Reinforcement Learning For Sim Based on AlphaGo Zero</p>
+                      <a href="https://sites.google.com/husky.neu.edu/simreinforcementlearning/home" style="color: wheat">Link to Google Site</a>
+                      <br>
+                      <a href="https://github.com/matthew-gries/sim_pencil_game_alpha_go_zero" style="color: wheat">Link to Github Page</a>
                     </div>
                   </div>
                 </section>
@@ -98,7 +102,7 @@
                 <header>
                   <h2>Contact Me</h2>
                 </header>
-                <form action="#" method="post">
+                <form name="contact-form" action="#" method="post">
                   <div>
                     <div class="row">
                       <div class="col-6 col-12-medium">
@@ -115,6 +119,9 @@
                       </div>
                       <div class="col-12">
                         <input type="submit" value="Send Message" />
+                      </div>
+                      <div class="col-12">
+                        <p name="contact-result"></p>
                       </div>
                     </div>
                   </div>
@@ -139,6 +146,7 @@
       <script src="assets/js/browser.min.js"></script>
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
+      <script src="assets/js/contact.js"></script>
       <script src="assets/js/main.js"></script>
 
   </body>
